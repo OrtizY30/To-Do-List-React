@@ -36,7 +36,7 @@ header .perfil {
     border: 1px solid black;
     z-index: 1;
     overflow: hidden;
-    background-color: black;
+    /* background-color: black; */
 
 }
 
@@ -106,20 +106,20 @@ header .perfil {
         height: 60px;
     }
 
-    header .menuBox::before {
+    /* header .menuBox::before {
         content: "";
         position: absolute;
         width: 10px;
         height: 10px;
         background-color: black;
         z-index: 0;
-        /* scale: 1 0; */
+        scale: 1 0;
         bottom: -4px;
         left: 61%;
         transform: rotate(45deg);
         transition: scale 0.5s ease-in-out;
 
-    }
+    } */
 
 }
 
@@ -133,10 +133,10 @@ header .perfil {
         margin-left: 20px;
     }
 
-    header .menuBox::before {
+    /* header .menuBox::before {
         left: 108px;
         bottom: -1px;
-    }
+    } */
 
     header .iconH {
         transform: translate(141px);
@@ -199,9 +199,9 @@ header .menuBox {
         width: 60px;
         margin-left: 0;
     }
-    header .menuBox::before{
+    /* header .menuBox::before{
         left: 72%;
-    }
+    } */
     section .inputTarea[type="text"] {
         width: 230px;
         padding: 8px 11px;
