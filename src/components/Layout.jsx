@@ -1,6 +1,6 @@
 import React from 'react'
 import Listado from './Listado'
-import Nav from './nav'
+import Nav from './Nav'
 
 const Layout = () => {
   return (
