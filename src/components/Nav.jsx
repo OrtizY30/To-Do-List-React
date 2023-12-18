@@ -33,7 +33,7 @@ const Nav = () => {
                     </ul>
                 </nav>
 
-                <h1>ToDo List</h1>
+                <h1>To Do List</h1>
             </header>
             <aside>
                 
