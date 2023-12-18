@@ -195,7 +195,7 @@ section #input #btn-Add:hover {
   z-index: 0;
   /* scale: 1 0; */
   bottom: -4px;
-  left: 18px;
+  left: 40%;
   transform: rotate(45deg);
   transition: scale 0.5s ease-in-out;
 
@@ -209,7 +209,7 @@ section #input #btn-Add:hover {
   opacity: 0;
 }
 .hoverGuardar{
-  right: 37px;
+  right: 0px;
   opacity: 0;
 }
 .guardar:hover ~ .hoverGuardar{

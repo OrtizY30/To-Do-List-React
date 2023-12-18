@@ -136,15 +136,16 @@ const Listado = () => {
                     </div>
                     {/* Icono de guaradar que recibira accionara la funcion guaradarEditado  */}
                  
-
-                    {/* Si la tarea no esta completada se mostrara el icono para editar la tarea */}
-                    {canEdit(tarea.completado) && <img src={editar} onClick={() => setShowInput(tarea.id)} alt="" className='editar' />}
+                   
+                    
+                    { showInput ===  tarea.id || canEdit(tarea.completado)  && <img src={editar} onClick={() => setShowInput(tarea.id)} alt="" className='editar' />} 
+                    {/* {canEdit(tarea.completado)  && <img src={editar} onClick={() => setShowInput(tarea.id)} alt="" className='editar' />} */}
                     <div className='hover hoverEditar'>
                       Editar
                     </div>
                    
 
-                    {showInput !== tarea.id &&  <img src={basura} alt="" onClick={() => borrartarea(tarea.id)} className='borrar' /> }
+                    {showInput !==  tarea.id && <img src={basura} alt="" onClick={() => borrartarea(tarea.id)} className='borrar' /> }
                     <div className='hover hoverBorrar' >
                       Borrar
                     </div>
