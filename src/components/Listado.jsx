@@ -105,7 +105,7 @@ const Listado = () => {
 
       <form id='input' onSubmit={guardarTarea} >
         <input className='inputTarea' type="text" name='tarea' onChange={e => setNewTarea(e.target.value)} value={newTarea} placeholder='Nueva tarea' />
-        <button id='btn-Add' >Agregar tarea</button>
+        <button id='btn-Add' >Agregar</button>
       </form>
 
 

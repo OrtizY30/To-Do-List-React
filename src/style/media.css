@@ -115,7 +115,7 @@ header .perfil {
         z-index: 0;
         /* scale: 1 0; */
         bottom: -4px;
-      
+        left: 61%;
         transform: rotate(45deg);
         transition: scale 0.5s ease-in-out;
 
@@ -191,17 +191,29 @@ header .menuBox {
     position: relative;
 }
 
-/* header .menuBox::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    z-index: 0; */
-/* scale: 1 0; */
-/* bottom: -1px;
-    left: 90px;
-    transform: rotate(45deg);
-    transition: scale 0.5s ease-in-out;
-
-} */
+@media (max-width:400px) {
+    header h1{
+        font-size: 25px;
+    }
+    header .perfil{
+        margin-left: 0;
+    }
+    header .menuBox::before{
+        left: 72%;
+    }
+    section .inputTarea[type="text"] {
+        width: 230px;
+        padding: 8px 11px;
+    }
+    #li-container li {
+        width: 280px;
+    }
+  #input  #btn-Add {
+    font-size: 12px;
+        padding: 12px;
+    }
+    .footer{
+        font-size: 12px;
+        padding: 15px;
+    }
+}
