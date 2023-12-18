@@ -1,11 +1,11 @@
 import React from 'react'
-import Nav from '../components/nav'
-import Listado from '../components/Listado'
+import Listado from './Listado'
+import Nav from './nav'
 
 const Layout = () => {
   return (
     <div className='layout'>
-      <Nav />
+    <Nav/>
       <Listado />
 
 
