@@ -196,6 +196,7 @@ header .menuBox {
         font-size: 25px;
     }
     header .perfil{
+        width: 60px;
         margin-left: 0;
     }
     header .menuBox::before{
