@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import basura from '/public/svg/basura.svg'
 import editar from '/public/svg/editar.svg'
 import guardar from '/public/svg/guardar.svg'
-import HookReducer from '../hook/hookReducers';
+import HookReducer from '../hook/HookReducers';
 
 // const init = () => {
 //   return JSON.parse(localStorage.getItem('listado')) || [];
