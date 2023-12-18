@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import basura from '/public/svg/basura.svg'
 import editar from '/public/svg/editar.svg'
 import guardar from '/public/svg/guardar.svg'
-import { ListadoReducer } from '../reducers/ListadoReducer';
 import HookReducer from '../hook/hookReducers';
 
 // const init = () => {
