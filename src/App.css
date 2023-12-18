@@ -1,0 +1,239 @@
+/*Estilos Generales*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+  
+}
+
+.layout {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+/*Estilos del aside*/
+header{
+  /* transform: translateX(-100%); */
+  display: none;
+}
+aside {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e4e4;
+  width: 250px;
+  padding: 30px;
+  text-align: center;
+
+}
+
+aside .perfil {
+  width: 100%;
+  border-radius: 50%;
+}
+
+aside nav {
+  margin-bottom: 100px;
+}
+
+aside nav a {
+  display: block;
+  color: #252525;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 5px solid transparent;
+  transition: all 300ms;
+
+}
+
+aside nav a:hover {
+  border-bottom: 5px solid white;
+}
+
+aside h1 {
+  display: block;
+  color: #708090;
+  font-family: 'Lucida Sans';
+}
+
+aside h1:hover {
+  cursor: pointer;
+}
+
+/*Estilos de la lista*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+  text-align: center;
+  padding: 40px;
+  gap: 30px;
+  align-items: center;
+
+}
+
+section #input {
+  display: flex;
+}
+
+section .inputTarea[type="text"] {
+  border: 2px solid #bab1b1;
+  width: 300px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0px 0px 30px gray;
+}
+
+section .inputTarea:hover {
+  box-shadow: 0px 0px 8px inset rgba(0, 0, 0, 0.692);
+  transition: all 300ms;
+}
+
+section input[type="text"]:focus {
+  outline: none;
+}
+
+#input #btn-Add {
+  /* background-color: #007BFF; */
+  background: rgb(0, 20, 168);
+  /* background: radial-gradient(circle, rgba(0, 20, 168, 1) 0%, rgba(201, 198, 255, 1) 100%); */
+  /* background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  ); */
+  border: 2px solid rgb(16, 123, 181);
+  box-shadow: 0px 0px 25px 0 rgba(65, 132, 234, 0.75);
+  margin-left: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+
+section #input #btn-Add:hover {
+  box-shadow:  0px 0px 20px rgba(10, 73, 211, 0.613);
+  transform: scale(1.05);
+  
+}
+
+#list_tarea .inputEditar{
+  background-color: transparent;
+  border: none;
+}
+
+/*Estilos de la tareas*/
+
+#li-container li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+  text-transform: capitalize;
+
+  width: 350px;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 8px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  color: #333333d0;
+}
+
+#li-container li:hover {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.466);
+  transform: scale(1.05);
+  transition: all .4s ease-in-out;
+}
+
+#li-container img {
+  display: block;
+  cursor: pointer;
+}
+
+#li-container .borrar:hover {
+  /* transform: scale(1.2); */
+  opacity: .5;
+  transition: all 300ms;
+  
+}
+
+.hover{
+  
+  position: absolute;
+  background: #ccc;
+  padding: 8px;
+  border-radius: 7px;
+  font-size: 11px;
+  top: -28px;
+  z-index: 1;
+  transition: all 300ms ease-in-out;
+}
+.hover::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  z-index: 0;
+  /* scale: 1 0; */
+  bottom: -4px;
+  left: 18px;
+  transform: rotate(45deg);
+  transition: scale 0.5s ease-in-out;
+
+}
+.hoverBorrar{
+  right: 3px;
+  opacity: 0;
+}
+.hoverEditar{
+  right: 37px;
+  opacity: 0;
+}
+.hoverGuardar{
+  right: 37px;
+  opacity: 0;
+}
+.guardar:hover ~ .hoverGuardar{
+  opacity: 0.8;
+}
+.editar:hover ~ .hoverEditar{
+  opacity: 0.8;
+}
+.borrar:hover ~ .hoverBorrar{
+  opacity: 0.8;
+}
+
+
+
+.footer{
+  color: white;
+   font-size: 20px;
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  background: rgb(210, 57, 57);
+  border: 1px solid rgb(36, 17, 17);
+  border-radius: 10px;
+  width: calc(200px -20px);
+  box-shadow: 0px 0px 20px gray;
+  padding: 20px;
+}
